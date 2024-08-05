@@ -1,0 +1,157 @@
+/* Main calendar container */
+.calendar {
+    width: 450px; /* Increased size for more space */
+    border-radius: 16px;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #80deea); /* Colorful gradient background */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    transform: perspective(1200px);
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+  }
+  
+  .calendar:hover {
+    transform: perspective(1200px) rotateY(10deg);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Header section */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #ff6f61, #de6a1f); /* Gradient header */
+    border-bottom: 2px solid #ddd;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .header button {
+    background: none;
+    border: none;
+    font-size: 2.5em; /* Larger buttons */
+    cursor: pointer;
+    color: #fff;
+    transition: color 0.4s ease, transform 0.4s ease;
+  }
+  
+  .header button:hover {
+    color: #ffeb3b; /* Highlight color on hover */
+    transform: scale(1.2);
+  }
+  
+  .header h2 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #fff;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Weekdays section */
+  .weekdays {
+    display: flex;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .weekday {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    border-right: 1px solid #ddd;
+    font-weight: bold;
+    color: #333;
+    background: linear-gradient(135deg, #fafafa, #f1f1f1); /* Light gradient for weekdays */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .weekday:hover {
+    background-color: #f0f8ff;
+    color: #007bff;
+    transform: translateY(-2px);
+  }
+  
+  /* Days section */
+  .days {
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+  }
+  
+  .day {
+    width: calc(100% / 7);
+    text-align: center;
+    padding: 20px; /* Increased padding for larger day boxes */
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff; /* Default background */
+  }
+  
+  .day:hover {
+    background: #e0f2f1;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .day.empty {
+    background-color: #f9f9f9;
+  }
+  
+  /* Styles for specific day types */
+  .today {
+    background-color: #ffeb3b; /* Bright yellow for today's date */
+    border-radius: 50%;
+    font-weight: bold;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+    transform: scale(1.1);
+  }
+  
+  .selected {
+    background-color: #80deea; /* Light blue for selected date */
+    border-radius: 50%;
+    font-weight: bold;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  .event {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    font-size: 0.75em;
+    padding: 2px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #ff5722; /* Orange for events */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Selected date information section */
+  .selectedDateInfo {
+    padding: 20px;
+    background-color: #fff;
+    border-top: 2px solid #ddd;
+    box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+  }
+  
+  .selectedDateInfo:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .selectedDateInfo h3 {
+    margin: 0;
+    font-size: 1.4em;
+    color: #333;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .selectedDateInfo p {
+    margin: 5px 0 0;
+    font-size: 1.1em;
+    color: #666;
+  }
+  

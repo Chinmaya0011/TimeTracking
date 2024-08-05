@@ -1,0 +1,223 @@
+.settingsContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .settingsContainer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .settingsForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  .labelContainer {
+    margin-bottom: 5px;
+    text-align: start;
+  }
+  
+  .label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .input, .textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .input:focus, .textarea:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    border-color: #007bff;
+  }
+  
+  .uploadLabel {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
+  
+  .uploadLabel:hover {
+    color: #0056b3;
+  }
+  
+  .uploadIcon {
+    margin-right: 5px;
+  }
+  
+  .fileInput {
+    display: none;
+  }
+  
+  .profilePicContainer {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .profilePic {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .profilePic:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .error, .success {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: start;
+  }
+  
+  .error {
+    color: #ff0000;
+  }
+  
+  .success {
+    color: #00cc00;
+  }
+  
+  .buttonContainer {
+    text-align: center;
+  }
+  
+  .saveButton {
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .saveButton:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+    transform: translateY(-3px);
+  }
+  .checkboxGroup {
+    display: flex;
+    flex-direction: column;
+    max-height: 200px; /* Ensures a fixed height */
+    overflow-y: scroll; /* Adds a scrollbar if content overflows */
+    border-radius: 15px;
+    background-color: #f0f8ff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+    padding: 10px;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .checkboxGroup:hover {
+    background-color: #e9f5ff;
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+  }
+  
+  .checkboxItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0;
+  }
+  
+  .checkboxLabel {
+    font-size: 14px;
+    color: #555;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+  
+  .checkboxInput {
+    transform: scale(1.2); /* Adjust size if needed */
+    margin-right: 8px;
+    cursor: pointer;
+  }
+  
+  .selectedEmployee {
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f1f6f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(236, 239, 238, 0.2);
+    border: 1px solid #007bff;
+    max-height: 200px;
+    overflow-y: scroll;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .selectedEmployee:hover {
+    background-color: #d0e7ff;
+    box-shadow: 0 6px 12px rgba(23, 44, 67, 0.3);
+  }
+  
+  .selectedEmployee p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .selectedEmployee ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .selectedEmployee li {
+    font-size: 14px;
+    color: #333;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  textarea {
+    resize: vertical; /* Allows vertical resizing only */
+    min-height: 100px; /* Ensures a minimum height */
+    max-height: 200px; /* Ensures a maximum height */
+    overflow-y: scroll; /* Adds a scrollbar if content overflows */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  textarea:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    border-color: #007bff;
+  }
+  

@@ -1,0 +1,139 @@
+.about {
+  padding: 60px 20px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
+  gap: 40px;
+  justify-items: center; /* Center content in each grid cell */
+  align-items: start;
+}
+
+.info > div {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow for 3D effect */
+  max-width: 500px; /* Uniform max-width */
+  width: 100%;
+  height: 350px; /* Uniform height */
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.info > div:hover {
+  transform: translateY(-10px) scale(1.03); /* 3D lift effect */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.icon {
+  font-size: 3rem;
+  color: #ff4500;
+  margin-bottom: 15px;
+}
+
+.info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.info p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.info ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+  margin: 0 auto; /* Center the list */
+  max-width: 450px; /* Ensure the list width is consistent */
+}
+
+.info li {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  .info {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets and smaller laptops */
+  }
+}
+
+@media (max-width: 768px) {
+  .info {
+    grid-template-columns: 1fr; /* One column for tablets and smaller devices */
+    gap: 20px;
+  }
+
+  .info > div {
+    max-width: 90%;
+    padding: 20px;
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .about h2 {
+    font-size: 2.2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+
+  .icon {
+    font-size: 2.5rem;
+  }
+
+  .info h3 {
+    font-size: 1.6rem;
+  }
+
+  .info p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .info > div {
+    padding: 15px;
+  }
+
+  .about h2 {
+    font-size: 1.8rem;
+  }
+
+  .about p {
+    font-size: 0.9rem;
+  }
+
+  .icon {
+    font-size: 2rem;
+  }
+
+  .info h3 {
+    font-size: 1.4rem;
+  }
+
+  .info p {
+    font-size: 0.9rem;
+  }
+}

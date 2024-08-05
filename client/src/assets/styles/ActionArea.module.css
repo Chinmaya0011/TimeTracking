@@ -1,0 +1,310 @@
+/* Container for Action Area */
+.actionArea {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 1px;
+}
+
+/* Common Button Styles */
+.actionButton,
+.refreshButton,
+.addButton,
+.printButton,
+.downloadButton,
+.calculatorButton,
+.campaignButton,
+.notificationButton,
+.accountButton {
+  margin: 4px; /* Increase margin for better spacing */
+  border: none;
+  border-radius: 12px; /* Increased border radius for rounded corners */
+  padding: 12px 20px; /* Increased padding for a more substantial look */
+  font-size: 18px;
+  color: #fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  position: relative; /* Added for pseudo-elements */
+}
+
+/* Button Hover Effect */
+.actionButton:hover,
+.refreshButton:hover,
+.addButton:hover,
+.printButton:hover,
+.downloadButton:hover,
+.calculatorButton:hover,
+.campaignButton:hover,
+.notificationButton:hover,
+.accountButton:hover {
+  background: linear-gradient(145deg, #e0e0e0, #ffffff);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  transform: translateY(-4px);
+}
+
+/* Button Active Effect */
+.actionButton:active,
+.refreshButton:active,
+.addButton:active,
+.printButton:active,
+.downloadButton:active,
+.calculatorButton:active,
+.campaignButton:active,
+.notificationButton:active,
+.accountButton:active {
+  background: linear-gradient(145deg, #d1d1d1, #ffffff);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(2px);
+}
+
+/* Edit Button Styles */
+.editButton {
+  background: linear-gradient(145deg, #f0f8ff, #e0e0e0);
+  color: #000;
+}
+
+.editButton:hover {
+  background: linear-gradient(145deg, #e0e0e0, #ffffff);
+  color: #333;
+}
+
+/* Delete Button Styles */
+.deleteButton {
+  background: linear-gradient(145deg, #dc3545, #c82333);
+}
+
+.deleteButton:hover {
+  background: linear-gradient(145deg, #c82333, #dc3545);
+}
+
+/* Add Button Styles */
+.addButton {
+  background: linear-gradient(145deg, #28a745, #218838);
+}
+
+.addButton:hover {
+  background: linear-gradient(145deg, #218838, #28a745);
+}
+
+/* Print Button Styles */
+.printButton {
+  background: linear-gradient(145deg, #007bff, #0056b3);
+}
+
+.printButton:hover {
+  background: linear-gradient(145deg, #0056b3, #007bff);
+}
+
+/* Download Button Styles */
+.downloadButton {
+  background: linear-gradient(145deg, #ff5722, #d84315); /* Different color */
+}
+
+.downloadButton:hover {
+  background: linear-gradient(145deg, #d84315, #ff5722); /* Different color */
+}
+
+/* Calculator Button Styles */
+.calculatorButton {
+  background: linear-gradient(145deg, #17a2b8, #138496);
+}
+
+.calculatorButton:hover {
+  background: linear-gradient(145deg, #138496, #17a2b8);
+}
+
+/* Campaign Button Styles */
+.campaignButton {
+  background: linear-gradient(145deg, #007bff, #0056b3);
+}
+
+.campaignButton:hover {
+  background: linear-gradient(145deg, #0056b3, #007bff);
+}
+
+/* Notification Button Styles */
+.notificationButton {
+  background: linear-gradient(145deg, #6c757d, #5a6268);
+}
+
+.notificationButton:hover {
+  background: linear-gradient(145deg, #5a6268, #6c757d);
+}
+
+/* Account Button Styles */
+.accountButton {
+  background: linear-gradient(145deg, #8e44ad, #6d2c91); /* Different color */
+}
+
+.accountButton:hover {
+  background: linear-gradient(145deg, #6d2c91, #8e44ad); /* Different color */
+}
+
+/* Count Button Styles */
+.countButton {
+  background: linear-gradient(145deg, #ffc107, #e0a800);
+  color: #fff;
+  position: relative;
+  border: none; /* Remove border */
+}
+
+.count {
+  font-size: 14px;
+  font-weight: bold;
+  background: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  padding: 4px 8px;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+
+/* Refresh Button Specific Styles */
+.refreshButton {
+  background: linear-gradient(145deg, #007bff, #0056b3);
+}
+
+.refreshButton:hover {
+  background: linear-gradient(145deg, #0056b3, #007bff);
+}
+
+.refreshButton:active {
+  background: linear-gradient(145deg, #003d79, #0056b3);
+}
+
+/* Refresh Button Animation */
+.refresh.clicked {
+  animation: rotate 2s linear infinite;
+}
+
+/* Search Container Styles */
+.searchContainer {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  margin: 2px;
+}
+
+/* Search Input Styles */
+.searchInput {
+  background: linear-gradient(145deg, #f0f8ff, #cce7ff);
+  border: 1px solid #b5d4ff;
+  border-radius: 12px; /* Increased border radius for a rounded look */
+  padding: 12px 20px 12px 50px; /* Increased padding */
+  font-size: 18px;
+  color: #333;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.searchInput:hover {
+  background: linear-gradient(145deg, #cce7ff, #f0f8ff);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  transform: translateY(-4px);
+}
+
+.searchInput:focus {
+  background: linear-gradient(145deg, #b5d4ff, #f0f8ff);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(2px);
+  outline: none;
+}
+
+/* Search Icon Styles */
+.searchIcon {
+  position: absolute;
+  left: 15px; /* Adjusted for better alignment */
+  font-size: 20px; /* Increased icon size */
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.searchIcon:hover {
+  color: #666;
+}
+
+/* Filter Container Styles */
+.filterContainer {
+  display: inline-flex;
+  align-items: center;
+  margin: 2px;
+}
+
+/* Filter Select Styles */
+.filterSelect {
+  background: linear-gradient(145deg, #f8fff0, #e7ffcc);
+  border: 1px solid #d4ffb5;
+  border-radius: 12px; /* Increased border radius */
+  padding: 12px 20px;
+  font-size: 18px;
+  color: #333;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+  margin-right: 5px;
+}
+
+.filterSelect:hover {
+  background: linear-gradient(145deg, #e7ffcc, #f8fff0);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  transform: translateY(-4px);
+}
+
+.filterSelect:focus {
+  background: linear-gradient(145deg, #d4ffb5, #f8fff0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(2px);
+  outline: none;
+}
+
+/* Filter Icon Styles */
+.filterIcon {
+  font-size: 26px; /* Increased icon size */
+  color: #333;
+  transition: color 0.3s ease;
+  margin-left: 10px; /* Adjusted spacing */
+}
+
+.filterIcon:hover {
+  color: #666;
+}
+
+/* Keyframe Animations */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.buttonIcon {
+  font-size: 20px; /* Increased icon size */
+  margin-right: 12px; /* Adjusted spacing */
+}
+.settingsButton {
+  color: rgb(203, 196, 196);
+  background-color: #6c757d;
+}
+
+.notificationCount {
+  font-size: 14px;
+  font-weight: bold;
+  background: #ff000d;
+  color: #fff;
+  border-radius: 50%;
+  padding: 4px 8px;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+.calendarButton {
+background-color: #282f2eec;
+}

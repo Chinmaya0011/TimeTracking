@@ -1,0 +1,102 @@
+/* Base Styles */
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Gradient background */
+  }
+  
+  .loginForm {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px; /* Slightly increased border radius for 3D effect */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow for 3D effect */
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease; /* Add transition for animation */
+  }
+  
+  .loginForm:hover {
+    transform: translateY(-10px); /* 3D lift effect on hover */
+  }
+  
+  /* Title */
+  .loginTitle {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #333;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle text shadow for depth */
+  }
+  
+  /* Form Groups */
+  .loginFormGroup {
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  /* Labels */
+  .loginLabel {
+    display: inline;
+    align-items: start;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Inputs */
+  .loginInput {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  }
+  
+  .loginInput:focus {
+    border-color: #007bff; /* Highlight border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle glow effect */
+  }
+  
+  /* Button */
+  .loginButton {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #007bff, #00d2ff); /* Gradient background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  }
+  
+  .loginButton:hover {
+    background: linear-gradient(135deg, #0056b3, #00aaff); /* Darker gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+  
+  /* Links */
+  .loginLinks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  .forgotPasswordLink,
+  .signupLink {
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+  }
+  
+  .forgotPasswordLink:hover,
+  .signupLink:hover {
+    color: #0056b3; /* Darker color on hover */
+    text-decoration: underline;
+  }
+  

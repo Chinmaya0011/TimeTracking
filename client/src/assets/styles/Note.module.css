@@ -1,0 +1,27 @@
+/* Default style: Hide on larger screens */
+.note {
+    display: none;
+  }
+  
+  /* Show only on mobile screens */
+  @media (max-width: 500px) {
+    .note {
+      display: block; /* Show the note on mobile screens */
+      background: linear-gradient(145deg, #ffffff, #e0e0e0); /* Gradient for depth */
+      color: #333; /* Dark text for readability */
+      border: 1px solid #ddd; /* Light border for subtle separation */
+      border-radius: 8px; /* Rounded corners for a softer look */
+      padding: 15px; /* Adequate padding inside the note */
+      margin: 10px; /* Margin around the note to separate from other elements */
+      font-size: 16px; /* Readable font size */
+      text-align: center; /* Center-align text */
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Shadow for 3D effect */
+      transition: transform 0.3s, box-shadow 0.3s; /* Animation for hover effect */
+    }
+  
+    .note:hover {
+      transform: translateY(-5px); /* Lift effect on hover */
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+    }
+  }
+  

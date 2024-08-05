@@ -1,0 +1,208 @@
+/* EmployeeRegistration.module.css */
+
+/* General styles */
+.registration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #e9ecef 0%, #fdfdfd 100%);
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .form {
+    width: 100%;
+    max-width: 600px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .form:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 4px 12px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .label {
+    font-size: 1rem;
+    color: #495057;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  .input,
+  .select {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    background-color: #d8dfe6;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .input:focus,
+  .select:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+    outline: none;
+  }
+  
+  .button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    color: #fff;
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .button:hover {
+    background: linear-gradient(135deg, #0056b3 0%, #003d7a 100%);
+    transform: translateY(-2px);
+  }
+  
+  .button:active {
+    background: linear-gradient(135deg, #003d7a 0%, #002b5c 100%);
+    transform: translateY(0);
+  }
+  
+  .icon {
+    margin-right: 10px;
+    color: #007bff;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+    .form {
+      padding: 30px;
+    }
+  
+    .heading {
+      font-size: 2.7rem;
+    }
+  
+    .label {
+      font-size: 1.1rem;
+    }
+  
+    .input,
+    .select {
+      font-size: 1.1rem;
+    }
+  
+    .button {
+      font-size: 1.3rem;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .registration {
+      padding: 30px;
+    }
+  
+    .heading {
+      font-size: 3rem;
+    }
+  
+    .formGroup {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .label {
+      width: 30%;
+      margin-bottom: 0;
+    }
+  
+    .input,
+    .select {
+      width: 70%;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .registration {
+      padding: 40px;
+    }
+  
+    .heading {
+      font-size: 3.3rem;
+    }
+  
+    .form {
+      padding: 40px;
+    }
+  
+    .formGroup {
+      margin-bottom: 20px;
+    }
+  
+    .label {
+      font-size: 1.2rem;
+    }
+  
+    .input,
+    .select {
+      font-size: 1.2rem;
+    }
+  
+    .button {
+      font-size: 1.4rem;
+    }
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .registration {
+      padding: 50px;
+    }
+  
+    .heading {
+      font-size: 3.6rem;
+    }
+  
+    .form {
+      padding: 50px;
+    }
+  
+    .formGroup {
+      margin-bottom: 25px;
+    }
+  
+    .label {
+      font-size: 1.3rem;
+    }
+  
+    .input,
+    .select {
+      font-size: 1.3rem;
+    }
+  
+    .button {
+      font-size: 1.5rem;
+    }
+  }
+  

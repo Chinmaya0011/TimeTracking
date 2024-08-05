@@ -1,0 +1,83 @@
+.testimonialCarousel {
+    padding: 20px 20px;
+    background: #f2f2f2;
+    text-align: center;
+  }
+  
+  .testimonialCarousel h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  .carouselContainer {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .testimonialItem {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    min-width: 300px;
+    margin: 0 10px;
+    text-align: center;
+    color: #000;
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  
+  .icon {
+    font-size: 3rem;
+    color: #ff4500;
+    margin-bottom: 20px;
+  }
+  
+  .testimonialItem h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000;
+  }
+  
+  .testimonialItem p {
+    font-size: 1.2rem;
+    color: #000;
+    margin-bottom: 15px;
+  }
+  
+  .testimonialItem span {
+    font-size: 1rem;
+    color: #000;
+  }
+  
+  .prevButton,
+  .nextButton {
+    background: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .prevButton {
+    left: 10px;
+  }
+  
+  .nextButton {
+    right: 10px;
+  }
+  
+
+  

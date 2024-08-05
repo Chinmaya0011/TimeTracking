@@ -1,0 +1,39 @@
+/* src/assets/styles/ContactPopup.module.css */
+.popup {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+  
+  .iconButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .iconButton:hover {
+    color: #007bff;
+  }
+  
+  .closeButton {
+    align-self: flex-end;
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 5px;
+  }
+  

@@ -1,0 +1,57 @@
+/* EmployeeList.module.css */
+.employeeList {
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: scroll;
+
+  /* Webkit Scrollbar Styling */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #007bff #f8f9fa; /* Firefox */
+}
+
+/* Webkit Scrollbar Styles */
+.employeeList::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+.employeeList::-webkit-scrollbar-track {
+  background: #f8f9fa; /* Background color of the track */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.employeeList::-webkit-scrollbar-thumb {
+  background: #007bff; /* Color of the scroll thumb */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.employeeList::-webkit-scrollbar-thumb:hover {
+  background: #0056b3; /* Darker color on hover */
+}
+
+
+.heading {
+  font-size: 2em;
+  color: #343a40;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1em;
+  color: #6c757d;
+  text-align: center;
+}
+
+@keyframes refresh {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.refreshing {
+  animation: refresh 0.6s linear infinite;
+}

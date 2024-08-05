@@ -1,0 +1,187 @@
+/* Container for Table */
+.tableContainer {
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  
+  /* Hide scrollbar for Chrome, Safari, and Opera */
+  .tableContainer::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge, and Firefox */
+  .tableContainer {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  /* Table Styles */
+  .table {
+    width: 100%;
+    color: #0d0d0dbe; /* Dark text color */
+    font-size: 14px; /* Compact font size */
+    text-align: left;
+    font-weight: bold;
+    table-layout: fixed; /* Fixed table layout */
+    background: #fff; /* White background */
+    border-radius: 8px;
+    overflow: hidden; /* Ensures text overflow is handled */
+  }
+  
+  .table th, 
+  .table td {
+    padding: 10px 12px; /* Adjusted padding */
+    border: 1px solid #ddd;
+    white-space: nowrap; /* Prevents text from wrapping */
+    text-overflow:ellipsis; /* Adds ellipsis for overflowed text */
+    overflow: hidden; /* Ensures text overflow is handled */
+  }
+  
+  .table th {
+    background-color: #6200ea; /* Purple background for header */
+    color: #fff; /* White text for header */
+    font-weight: 600; /* Bold font for header */
+    text-transform: uppercase; /* Uppercase text for header */
+  }
+  
+  .table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternating row colors */
+  }
+  
+  .table tbody tr:hover {
+    background-color: #f1f1f1; /* Light gray on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Define specific column widths */
+  .table th:nth-child(1), 
+  .table td:nth-child(1) {
+    width: 20px; /* Name */
+  }
+  
+  .table th:nth-child(2), 
+  .table td:nth-child(2) {
+    width: 160px; /* Email */
+  }
+  
+  .table th:nth-child(3), 
+  .table td:nth-child(3) {
+    width: 140px; /* Mobile */
+  }
+  
+  .table th:nth-child(4), 
+  .table td:nth-child(4) {
+    width: 100px; /* Gender */
+  }
+  
+  .table th:nth-child(5), 
+  .table td:nth-child(5) {
+    width: 40px; /* Position */
+  }
+  
+  .table th:nth-child(6), 
+  .table td:nth-child(6) {
+    width: 100px; /* Address */
+  }
+  
+  .table th:nth-child(7), 
+  .table td:nth-child(7) {
+    width: 180px; /* Start Date */
+  }
+  
+  .table th:nth-child(8), 
+  .table td:nth-child(8) {
+    text-align: center;
+    width: auto;
+  }
+  
+  /* Action Buttons Container */
+  .actions {
+    display: flex;
+    gap: 1px; /* Reduced space between buttons */
+  }
+  
+  /* Common Button Styles */
+  .actionButton {
+    margin: 2px;
+    border: 1px solid #d1d1d1;
+    border-radius: 6px; /* Slightly smaller border radius */
+    padding: 6px 12px; /* Reduced padding */
+    font-size: 16px; /* Slightly smaller font size */
+    color: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+  }
+  
+  /* Action Button Hover Effect */
+  .actionButton:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+  }
+  
+  /* Action Button Active Effect */
+  .actionButton:active {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transform: translateY(1px);
+  }
+  
+  /* Individual Action Button Colors */
+  .viewButton {
+    background: linear-gradient(145deg, #3074a8, #1e9fa1d6);
+  }
+  
+  .emailButton {
+    background: linear-gradient(145deg, #f73737bd, #ec2929);
+  }
+  
+  .whatsappButton {
+    background: linear-gradient(145deg, #0dd80d, #05dd1e);
+  }
+  
+  .callButton {
+    background: linear-gradient(145deg, #2035f2, #4d3ddfae);
+  }
+  
+  .paymentButton {
+    background: linear-gradient(145deg, #303030, #9e9797);
+  }
+  
+  .analysisButton {
+    background: linear-gradient(145deg, #6A0D91, #4B0082);
+  }
+  
+  /* Button Icon Styles */
+  .buttonIcon {
+    font-size: 16px; /* Adjusted icon size */
+    margin-right: 6px; /* Adjusted margin */
+  }
+  /* EmployeeListTable.module.css */
+
+/* Existing styles... */
+
+.contactButton {
+  background-color: #007bff;
+  color: white;
+}
+
+.contactPopup {
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.closePopupButton {
+  background-color: rgba(255, 0, 0, 0.753);
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}

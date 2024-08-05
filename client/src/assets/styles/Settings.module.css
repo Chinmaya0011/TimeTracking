@@ -1,0 +1,171 @@
+/* General Container Styling */
+.settingsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in;
+}
+
+/* Heading Styling */
+.heading {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styling */
+.settingsForm {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form Group Styling */
+.formGroup {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label Container Styling */
+.labelContainer {
+  display: flex;
+  align-items: center;
+}
+
+/* Icons Styling */
+.icon, .uploadIcon {
+  font-size: 1rem;
+  color: #666;
+  margin-right: 0.4rem;
+}
+
+/* Label Styling */
+.label {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Input Styling */
+.input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
+}
+
+/* File Input Styling */
+.fileInput {
+  display: none;
+}
+
+/* Upload Label Styling */
+.uploadLabel {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* Profile Picture Container Styling */
+.profilePicContainer {
+  display: flex;
+  justify-content: start;
+  margin-top: 0.5rem;
+}
+
+.profilePic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Button Container Styling */
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+/* Button Styling */
+.editButton, .saveButton, .cancelButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.editButton {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.editButton:hover {
+  background-color: #0056b3;
+}
+
+.saveButton {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.saveButton:hover {
+  background-color: #218838;
+}
+
+.cancelButton {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.cancelButton:hover {
+  background-color: #c82333;
+}
+
+/* Forgot Password Link Styling */
+.forgotPassword {
+  margin-top: 1rem;
+}
+
+.forgotPasswordLink {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.forgotPasswordLink:hover {
+  text-decoration: underline;
+}
+
+/* Keyframe Animation for Fade In */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

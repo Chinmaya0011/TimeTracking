@@ -1,0 +1,91 @@
+.contact {
+  background: #fff; /* Light background color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+  max-width: 500px; /* Center alignment */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333; /* Dark text color */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  display: block;
+  font-size: 1rem;
+  color: #333; /* Dark text color */
+  margin-bottom: 8px;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.formGroup textarea {
+  height: 120px;
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.submitButton {
+  background: #ff6600; /* Orange color */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #e65c00; /* Darker shade of orange on hover */
+}
+
+.submitButton:active {
+  background-color: #cc5200; /* Even darker shade of orange when clicked */
+}
+
+.submitButton:focus {
+  outline: none; /* Remove default outline */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .contact {
+    padding: 15px;
+  }
+
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .formGroup input,
+  .formGroup textarea {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .submitButton {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}

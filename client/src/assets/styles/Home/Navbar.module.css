@@ -1,0 +1,40 @@
+/* Navbar.module.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem 2rem; /* Added extra padding for a more spacious look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.navbar h1 {
+  color: #ff6600;
+  font-size: 1.75rem; /* Slightly larger font size for the brand name */
+  font-weight: bold; /* Make the brand name stand out */
+  letter-spacing: 1px; /* Add some letter spacing for a cleaner look */
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem; /* Increased gap between nav items */
+}
+
+.nav-links a {
+  color: #ff6600;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem; /* Slightly more padding for a better click area */
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
+  font-weight: 500; /* Slightly bolder text for nav links */
+}
+
+.nav-links a:hover {
+  background-color: #ff6600; /* Background color change on hover */
+  color: #ffffff; /* Change text color to white on hover */
+}
+
+.nav-links a.active {
+  border-bottom: 2px solid #ff6600; /* Add underline for the active link */
+  font-weight: 600; /* Make active link text bolder */
+}
